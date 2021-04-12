@@ -21,9 +21,9 @@ Limiting the bandwidth of data-flows is a simple but effective way of prioritizi
 
 In such a scenario, you may want to limit the bandwidth of **lower priority** data-flows (like file uploads, downloads from repositories or image registries, sync with remote storage/DB), in order to free bandwidth that can be used by **high-priority** streams.
 
-Along with the Priority Queues introduced in IoT Edge v1.0.10 [here](https://link), this data-flow prioritization strategy can help you to have a better control on your IoT Edge solution.
+Along with the Priority Queues introduced in IoT Edge v1.0.10 [here](https://techcommunity.microsoft.com/t5/internet-of-things/prioritize-critical-messages-from-your-edge-device-to-the-cloud/ba-p/1777959), this data-flow prioritization strategy can help you to have a better control on your IoT Edge solution.
 
-Have a look to [this](https://link) blog post for additional context. 
+Have a look to [this](https://techcommunity.microsoft.com/t5/internet-of-things/how-to-deal-with-constrained-metered-connections-when-connecting/ba-p/1758943) blog post for additional context. 
 
 ## An example
 Let's assume you have a blob storage module (named 'myBlobStorage') running in your IoT Edge device, and you want to make sure it does not exceed  50Kbps when it performs a file transfer.
